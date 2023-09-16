@@ -1,0 +1,17 @@
+.blue_arrow a {
+    color: #24A3FF;
+    font-size: 14px;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-bottom: 5px;
+
+    &__right::after {
+        content: '';
+        background-image: url("../img/arrow-right.svg");
+        width: 12px;
+        height: 13px;
+    }
+
+}
