@@ -40,6 +40,10 @@ $white: #fff;
         align-self: start;
     }
 
+    &__title:hover {
+    color: white;
+    }
+
     &__text {
         color: $white;
         font-size: 16px;
