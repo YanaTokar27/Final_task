@@ -15,7 +15,6 @@
         line-height: normal;
         letter-spacing: 1px;
         text-transform: uppercase;
-        //padding-bottom: 30px;
     }
 
     &__img {
@@ -33,19 +32,7 @@
                 background-color: white;
                 border-radius: 12px;
             }
-    }
-
-
-        //&.legal {
-        //    margin-bottom: 30px;
-        //    background-image: url(../img/about/legal.png);
-        //    background-repeat: no-repeat;
-        //    background-position: center;
-        //    min-width: 255px;
-        //    min-height: 90px;
-        //    background-color: white;
-        //    border-radius: 12px;
-        //}
+        }
 
         &__img_prem {
             display: none;
@@ -68,7 +55,6 @@
         &__img {
             display: flex;
             justify-content: space-between;
-            //padding: 30px 0;
 
             &_item {
                 background-repeat: no-repeat;
@@ -100,15 +86,9 @@
             }
 
 
-
-
         }
 
     }
-
-    //.ellipse {
-    //    padding-top: 30px;
-    //}
 }
 
 
