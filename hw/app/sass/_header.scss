@@ -259,10 +259,6 @@ $white: #fff;
             background-image: url('../img/about/menu.svg');
         }
 
-        //&.active {
-        //    background-image: url('../img/about/close.svg');
-        //}
-
         &_close_about {
             background-image: url("../img/about/close.svg");
         }
@@ -387,9 +383,8 @@ $white: #fff;
 }
 
 @media (min-width: 768px) {
-
-    .header {
-        position: relative;
+    .achieve {
+        margin-bottom: 60px;
     }
 
     .header__logo-box-page-about {
@@ -432,9 +427,16 @@ $white: #fff;
     }
 
     .header {
+        position: relative;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, min-content);
         display: block;
+
+        &__title {
+            &.about{
+                font-size: 38px;
+            }
+        }
 
         &__phone::after {
             content: '';
@@ -454,6 +456,10 @@ $white: #fff;
         display: flex;
         align-items: center;
         padding: 50px 50px 30px 0;
+
+        &.about {
+            background: none;
+        }
     }
     .header__address,
     .header__fb {
@@ -469,7 +475,6 @@ $white: #fff;
         padding-bottom: 417px;
     }
 
-
     .header__address {
         display: inline-flex;
         align-items: center;
@@ -477,6 +482,13 @@ $white: #fff;
         font-size: 16px;
         font-weight: 400;
         line-height: normal;
+
+        &.about {
+            color: #B3B3BA;
+            text-align: right;
+            font-weight: 400;
+            line-height: normal;
+        }
     }
 
     .header__address::before {
@@ -504,14 +516,22 @@ $white: #fff;
         height: auto;
         padding-top: 0;
         padding-bottom: 0;
-        margin-bottom: 30px;
+        //margin-bottom: 30px;
     }
     .header__logo-box-page {
-        font-size: 36px;
+        &.about {
+            font-size: 36px;
+            align-self: start;
+        }
     }
 
     .header__logo-box-page::before {
         background-size: 21px 47px;
+        width: 21px;
+        height: 47px;
+    }
+
+    .slash {
         width: 21px;
         height: 47px;
     }
@@ -541,13 +561,20 @@ $white: #fff;
                 display: flex;
                 justify-content: center;
                 background: transparent;
-                color: white;
-                text-align: center;
-                font-size: 16px;
                 margin-right: 15px;
+                margin-top: 30px;
+                color: var(--active-regular, #24A3FF);
+                font-size: 16px;
+
+                &.current {
+                    color: var(--Accent, #F0145A);
+                    border-bottom: 2px solid var(--Accent, #F0145A);
+                    border-radius: 0;
+                }
             }
         }
     }
+
 
     //&.item {
     //    margin-right: 15px;
