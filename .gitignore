@@ -9,3 +9,7 @@
 modules.xml
 workspace.xml
 vcs.xml
+
+/dist
+/node_modules
+package-lock.json

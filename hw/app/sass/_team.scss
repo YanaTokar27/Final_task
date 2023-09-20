@@ -167,7 +167,37 @@
             }
         }
     }
+
+    .team_info {
+        display: flex;
+
+        &__title {
+            padding-top: 0;
+        }
+    }
+
+    .info {
+        width: 482px;
+    }
+
+    .title {
+        width: 382px;
+        margin-left: 60px
+    }
+
+    .achievements__img_item {
+        width: 196px;
+    }
+    .ellipse__button {
+
+        &.six,
+        &.five,
+        &.four {
+            display: none;
+        }
+    }
 }
+
 
 @media (min-width: 1400px) {
     .team {
