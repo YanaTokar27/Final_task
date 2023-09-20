@@ -1,0 +1,99 @@
+.services {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    &__title {
+        font-size: 30px;
+        line-height: normal;
+        background: var(--gradient-red-text, linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding-bottom: 28px;
+    }
+
+    &__text {
+        color: #000;
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 30px;
+
+        &.last {
+            padding-top: 30px;
+
+        }
+    }
+}
+
+.achieve {
+    margin-bottom: 30px;
+
+    &__card {
+        padding-bottom: 40px;
+        padding-left: 30px;
+        border-left: 4px solid var(--grey-separator, #E6E6F0);
+
+        &.last {
+            padding-bottom: 0;
+        }
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 10px;
+    }
+
+    &__img {
+        width: 32px;
+        height: 32px;
+    }
+
+    &__info {
+        text-align: center;
+        font-size: 36px;
+        line-height: normal;
+        background: var(--gradient-red-text, linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding-left: 8px;
+    }
+
+    &__text {
+        color: var(--main-regular, #323264);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+@media (min-width: 768px) {
+    .achieve {
+        margin-bottom: 60px;
+    }
+    .services {
+        &__title {
+            font-size: 38px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .services {
+        padding: 0;
+        width: 486px;
+        padding-right: 30px;
+    }
+
+    .achieve {
+        width: 388px;
+        margin-bottom: 0;
+    }
+
+    .services-achieve {
+        display: flex;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
