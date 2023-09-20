@@ -1476,6 +1476,14 @@
     background-image: url(../img/about/ulf.png);
   }
 }
+@media (min-width: 1400px) {
+  .achievements__img_item {
+    min-width: 300px;
+  }
+  .achievements__img_item.legal {
+    min-width: 300px;
+  }
+}
 .services {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -1565,6 +1573,33 @@
     display: flex;
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+  .team_info__title {
+    font-size: 38px;
+  }
+}
+@media (min-width: 1400px) {
+  .services {
+    width: 662px;
+  }
+  .achieve {
+    width: 388px;
+  }
+  .services-achieve {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .team_info {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .info {
+    width: 658px;
+  }
+  .title {
+    width: 362px;
   }
 }
 /*# sourceMappingURL=style.css.map */

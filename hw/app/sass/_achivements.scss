@@ -91,6 +91,17 @@
     }
 }
 
+@media (min-width: 1400px) {
+
+    .achievements__img_item {
+        min-width: 300px;
+
+        &.legal {
+            min-width: 300px;
+        }
+    }
+}
+
 
 
 

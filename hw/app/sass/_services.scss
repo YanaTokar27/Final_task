@@ -96,4 +96,35 @@
         padding-top: 60px;
         padding-bottom: 60px;
     }
+
+    .team_info__title {
+        font-size: 38px;
+    }
+}
+
+@media  (min-width: 1400px) {
+    .services {
+        width: 662px;
+    }
+
+    .achieve {
+        width: 388px;
+    }
+
+    .services-achieve {
+        justify-content: center;
+    }
+
+    .team_info {
+        justify-content: center;
+    }
+
+    .info {
+        width: 658px;
+    }
+
+    .title {
+        width: 362px;
+    }
+
 }
