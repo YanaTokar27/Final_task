@@ -1,5 +1,14 @@
+$hover-header: #24A3FF;
+$white: #fff;
+$switch: #B3B3BA;
+
+.blue_arrow {
+    display: flex;
+    align-self: flex-start;
+}
+
 .blue_arrow a {
-    color: #24A3FF;
+    color: $hover-header;
     font-size: 14px;
     line-height: normal;
     letter-spacing: 1px;
@@ -13,4 +22,23 @@
         width: 12px;
         height: 13px;
     }
+}
+
+.blue_arrow:hover a {
+    color: $white;
+    transition-duration: 800ms;
+    transform: scale(1.1);
+}
+
+.blue_arrow:hover path {
+    stroke: $white;
+    transition-duration: 800ms;
+}
+
+.blue_arrow__dark:hover a {
+    color: $switch;
+}
+
+.blue_arrow__dark:hover path {
+    stroke: $switch;
 }

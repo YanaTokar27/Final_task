@@ -1,3 +1,5 @@
+$link-active: #E6E6F0;
+
 .services {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -31,7 +33,7 @@
     &__card {
         padding-bottom: 40px;
         padding-left: 30px;
-        border-left: 4px solid var(--grey-separator, #E6E6F0);
+        border-left: 4px solid $link-active;
 
         &.last {
             padding-bottom: 0;
@@ -61,7 +63,7 @@
     }
 
     &__text {
-        color: var(--main-regular, #323264);
+        color: #323264;
         font-size: 16px;
         font-weight: 400;
         line-height: normal;

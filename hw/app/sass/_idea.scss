@@ -1,3 +1,4 @@
+$hover-header: #24A3FF;
 $white: #fff;
 
 .idea {
@@ -33,7 +34,7 @@ $white: #fff;
     }
 
     &__title {
-        color: #24A3FF;
+        color: $hover-header;
         font-size: 22px;
         line-height: normal;
         text-decoration: none;
@@ -41,7 +42,8 @@ $white: #fff;
     }
 
     &__title:hover {
-    color: white;
+        color: $white;
+        transition-duration: 700ms;
     }
 
     &__text {

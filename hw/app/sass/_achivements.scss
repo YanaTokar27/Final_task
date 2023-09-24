@@ -1,5 +1,5 @@
 .achievements {
-    background: var(--grey-bg, #F5F5FA);
+    background: #F5F5FA;
     &__card {
         display: flex;
         flex-direction: column;
@@ -7,7 +7,7 @@
     }
 
     &__title {
-        color: var(--main-regular, #323264);
+        color: #323264;
         text-align: center;
         font-size: 14px;
         line-height: normal;

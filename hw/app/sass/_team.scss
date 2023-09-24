@@ -1,3 +1,6 @@
+$hover-header:#24A3FF;
+$switch: #B3B3BA;
+
 .team {
     background-color: white;
 
@@ -16,7 +19,7 @@
     }
 
     &__name {
-        color: var(--grey-text, #B3B3BA);
+        color: $switch;
         font-size: 16px;
         line-height: normal;
         margin-top: 30px;
@@ -24,7 +27,7 @@
     }
 
     &__position {
-        color: #B3B3BA;
+        color: $switch;
         font-size: 14px;
         font-weight: 400;
         line-height: 22px;
@@ -58,7 +61,7 @@
         margin: 0 4px;
 
         &.active {
-            background: #24A3FF;
+            background: $hover-header;
         }
     }
 }

@@ -1,8 +1,12 @@
+$hover-header:#24A3FF;
+$link-active: #E6E6F0;
+$switch: #B3B3BA;
+
 .publications {
     padding-top: 30px;
     padding-left: 30px;
     padding-right: 30px;
-    background: var(--grey-bg, #F5F5FA);
+    background: #F5F5FA;
 
     &__title {
         font-size: 30px;
@@ -49,7 +53,7 @@
     }
 
     &__title {
-        color: var(--active-regular, #24A3FF);
+        color: $hover-header;
         font-size: 16px;
         line-height: normal;
         padding-bottom: 15px;
@@ -58,13 +62,13 @@
     }
 
     &__data {
-        color: var(--grey-text, #B3B3BA);
+        color: $switch;
         font-size: 12px;
         line-height: normal;
         letter-spacing: 1px;
         text-transform: uppercase;
         padding-bottom: 15px;
-        border-bottom: 4px solid #E6E6F0;
+        border-bottom: 4px solid $link-active;
     }
 
     &__text {

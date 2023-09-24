@@ -111,7 +111,7 @@
   padding-bottom: 60px;
 }
 .header__title h1 {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-size: 38px;
   line-height: normal;
@@ -131,7 +131,7 @@
   background: rgba(245, 245, 250, 0.2);
 }
 .header__info.about {
-  background: #F5F5FA;
+  background: #E6E6F0;
 }
 .header__address, .header__fb {
   display: none;
@@ -166,7 +166,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #323264;
   font-size: 20px;
   font-weight: 400;
   line-height: normal;
@@ -198,7 +197,7 @@
 }
 
 .lang__about a:hover {
-  background-color: white;
+  background-color: #fff;
 }
 
 .lang a.active {
@@ -252,7 +251,7 @@
   width: 100%;
   list-style: none;
   padding: 12px;
-  background: white;
+  background: #fff;
 }
 .menu__list_close {
   display: none;
@@ -559,7 +558,7 @@
     border-radius: 0;
   }
   .menu .menu__list_item.white {
-    color: #FFF;
+    color: #fff;
     -webkit-transition-duration: 1000ms;
             transition-duration: 1000ms;
     -webkit-transition-property: color;
@@ -718,7 +717,9 @@
       align-self: start;
 }
 .item__title:hover {
-  color: white;
+  color: #fff;
+  -webkit-transition-duration: 700ms;
+          transition-duration: 700ms;
 }
 .item__text {
   color: #fff;
@@ -843,7 +844,7 @@
   fill: #9E4DC3;
 }
 .footer__tel {
-  color: var(--main-alt, #46466E);
+  color: #46466E;
   font-size: 16px;
   line-height: normal;
   text-decoration: none;
@@ -854,7 +855,7 @@
   color: #9E4DC3;
 }
 .footer__mail {
-  color: var(--active-regular, #24A3FF);
+  color: #24A3FF;
   font-size: 16px;
   line-height: normal;
   text-decoration: none;
@@ -864,7 +865,7 @@
   color: #9E4DC3;
 }
 .footer__bottom {
-  color: var(--grey-text, #B3B3BA);
+  color: #B3B3BA;
   text-align: center;
   font-size: 16px;
   font-weight: 400;
@@ -1007,7 +1008,7 @@
   }
 }
 .trust {
-  background-color: white;
+  background-color: #fff;
 }
 .trust__title {
   color: #323264;
@@ -1099,6 +1100,14 @@
             justify-content: space-between;
   }
 }
+.blue_arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
 .blue_arrow a {
   color: #24A3FF;
   font-size: 14px;
@@ -1115,11 +1124,33 @@
   height: 13px;
 }
 
+.blue_arrow:hover a {
+  color: #fff;
+  -webkit-transition-duration: 800ms;
+          transition-duration: 800ms;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.blue_arrow:hover path {
+  stroke: #fff;
+  -webkit-transition-duration: 800ms;
+          transition-duration: 800ms;
+}
+
+.blue_arrow__dark:hover a {
+  color: #B3B3BA;
+}
+
+.blue_arrow__dark:hover path {
+  stroke: #B3B3BA;
+}
+
 .publications {
   padding-top: 30px;
   padding-left: 30px;
   padding-right: 30px;
-  background: var(--grey-bg, #F5F5FA);
+  background: #F5F5FA;
 }
 .publications__title {
   font-size: 30px;
@@ -1167,7 +1198,7 @@
   border-radius: 0 0 8px 8px;
 }
 .to_tell__title {
-  color: var(--active-regular, #24A3FF);
+  color: #24A3FF;
   font-size: 16px;
   line-height: normal;
   padding-bottom: 15px;
@@ -1176,7 +1207,7 @@
       align-self: start;
 }
 .to_tell__data {
-  color: var(--grey-text, #B3B3BA);
+  color: #B3B3BA;
   font-size: 12px;
   line-height: normal;
   letter-spacing: 1px;
@@ -1283,7 +1314,7 @@
   -webkit-text-fill-color: transparent;
 }
 .team__name {
-  color: var(--grey-text, #B3B3BA);
+  color: #B3B3BA;
   font-size: 16px;
   line-height: normal;
   margin-top: 30px;
@@ -1444,7 +1475,7 @@
   }
 }
 .achievements {
-  background: var(--grey-bg, #F5F5FA);
+  background: #F5F5FA;
 }
 .achievements__card {
   display: -webkit-box;
@@ -1457,7 +1488,7 @@
   padding: 30px 60px;
 }
 .achievements__title {
-  color: var(--main-regular, #323264);
+  color: #323264;
   text-align: center;
   font-size: 14px;
   line-height: normal;
@@ -1557,7 +1588,7 @@
 .achieve__card {
   padding-bottom: 40px;
   padding-left: 30px;
-  border-left: 4px solid var(--grey-separator, #E6E6F0);
+  border-left: 4px solid #E6E6F0;
 }
 .achieve__card.last {
   padding-bottom: 0;
@@ -1587,7 +1618,7 @@
   padding-left: 8px;
 }
 .achieve__text {
-  color: var(--main-regular, #323264);
+  color: #323264;
   font-size: 16px;
   font-weight: 400;
   line-height: normal;
