@@ -99,10 +99,6 @@
             font-size: 38px;
         }
 
-        &__card {
-            margin-bottom: 30px;
-        }
-
         &__img {
             background: url("../img/man.jpg") no-repeat center;
             background-size: cover;
@@ -112,14 +108,6 @@
 
         &__item {
             margin-bottom: 0;
-        }
-
-        &__line {
-            padding-bottom: 16px;
-        }
-
-        &__name {
-            margin-top: 12px;
         }
     }
 
@@ -137,13 +125,14 @@
         display: flex;
 
         &__line {
-            padding-bottom: 0;
+            padding-bottom: 30px;
             margin-bottom: 0;
             border-radius: 0 12px 12px 0;
         }
 
         &__card {
             display: flex;
+            margin-bottom: 30px;
         }
 
         &__img {
@@ -198,10 +187,8 @@
     }
 }
 
-
-@media (min-width: 1400px) {
+@media (min-width: 1440px) {
     .team {
-
         padding-right: 0;
         padding-left: 0;
 

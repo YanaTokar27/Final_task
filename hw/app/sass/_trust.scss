@@ -25,32 +25,61 @@
         justify-content: center;
         flex: 1 0 0;
 
+        &_01 {
+            background: #1C4280;
+        }
+
+        &_02 {
+            background: #143646;
+        }
+
+        &_03 {
+            background: linear-gradient(0deg, #F48B30 0%, #F48B30 100%), #F48B30;
+        }
+
+        &_04 {
+            background: #9E4DC3;
+        }
+
+        &_05 {
+            background: #FD9339;
+        }
+
+        &_06 {
+            background: #E2E2E4;
+        }
+
+        &_07 {
+            background: #C71C36;
+        }
+
+        &_08 {
+            background: #DCF3F9;
+        }
+
+        &_09 {
+            background: #EAEAEA;
+        }
+
+        &_10 {
+            background: #282240;
+        }
+
+        &_11 {
+            background: #1D4568;
+        }
+
+        &_12 {
+            background: #000;
+        }
     }
 
-    &__item_07 {
-        display: none;
-    }
-
-    &__item_08 {
-        display: none;
-    }
-
-    &__item_09 {
-        display: none;
-    }
-
-    &__item_10 {
-        display: none;
-    }
-
-    &__item_11 {
-        display: none;
-    }
-
-    &__item_12 {
-        display: none;
-    }
-
+    &__item_07,
+    &__item_08,
+    &__item_09,
+    &__item_10,
+    &__item_11,
+    &__item_12,
     &__item_13 {
         display: none;
     }
@@ -63,30 +92,12 @@
             grid-template-rows: repeat(6, 1fr);
         }
 
-        &__item_07 {
-            display: block;
-        }
-
-        &__item_08 {
-            display: block;
-        }
-
-        &__item_09 {
-            display: block;
-        }
-
-        &__item_10 {
-            display: block;
-        }
-
-        &__item_11 {
-            display: block;
-        }
-
-        &__item_12 {
-            display: block;
-        }
-
+        &__item_07,
+        &__item_08,
+        &__item_09,
+        &__item_10,
+        &__item_11,
+        &__item_12,
         &__item_13 {
             display: block;
         }
@@ -98,6 +109,7 @@
 
         &__item {
             width: 25%;
+            justify-content: space-between;
         }
     }
 }

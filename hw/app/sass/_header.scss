@@ -38,12 +38,10 @@ $white: #fff;
     bottom: -20px;
 }
 
-
 .header {
     display: grid;
     grid-template-columns: 1fr min-content;
     grid-template-rows: min-content min-content;
-
 
     &__text {
         color: var(--basic-black, #000);
@@ -123,29 +121,32 @@ $white: #fff;
     }
 }
 
-
 .lang {
     display: flex;
     padding-left: 0;
     list-style: none;
-}
 
-.lang a {
-    color: #B3B3BA;
-    text-align: center;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: bold;
-    line-height: normal;
-    letter-spacing: 1px;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 5px 7px;
-    border-radius: 8px;
+    & a {
+        color: #B3B3BA;
+        text-align: center;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: normal;
+        letter-spacing: 1px;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 5px 7px;
+        border-radius: 8px;
+    }
 }
 
 .lang a:hover {
     background-color: #F5F5FA;
+}
+
+.lang__about a:hover {
+    background-color: white;
 }
 
 .lang a.active {
@@ -178,7 +179,6 @@ $white: #fff;
 }
 
 .menu {
-
     &__list {
         display: block;
         position: absolute;
@@ -226,9 +226,8 @@ $white: #fff;
     }
 
     .menu__list_item:hover a {
-        color: #24A3FF;
+        color: $hover-header;
     }
-
 
     &__btn {
         cursor: pointer;
@@ -317,7 +316,6 @@ $white: #fff;
     display: block;
 }
 
-
 @media (min-width: 768px) {
 
     .header__logo-box-page-about {
@@ -364,7 +362,6 @@ $white: #fff;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, min-content);
         display: block;
-
 
         &__phone::after {
             content: '';
@@ -446,7 +443,6 @@ $white: #fff;
         height: auto;
         padding-top: 0;
         padding-bottom: 0;
-        //margin-bottom: 30px;
     }
 
     .header__logo-box-page {
@@ -586,6 +582,7 @@ $white: #fff;
 
         }
     }
+
     .tabs_content__title {
         border-top: none;
         padding-top: 0;
@@ -603,7 +600,6 @@ $white: #fff;
 
 
 @media (min-width: 1400px) {
-
     .tabs__sw {
         padding-right: 60px;
         justify-content: end;

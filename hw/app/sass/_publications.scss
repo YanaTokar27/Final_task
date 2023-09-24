@@ -21,7 +21,6 @@
     }
 }
 
-
 .to_tell {
     list-style: none;
     border-radius: 8px 8px 8px 8px;
@@ -83,11 +82,9 @@
         height: 200px;
         overflow: hidden;
     }
-
 }
 
 @media (min-width: 768px) {
-
     .publications {
         padding-left: 60px;
         padding-right: 60px;
@@ -101,6 +98,7 @@
             flex-wrap: wrap;
         }
     }
+
     .to_tell {
         width: 50%;
 
