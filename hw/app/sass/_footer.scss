@@ -45,7 +45,9 @@ $footer: #9E4DC3;
     }
 
     &__img {
-        text-align: center;
+        display: flex;
+        align-self: center;
+        transition-duration: 700ms;
     }
 
     &__img:hover path {
@@ -85,6 +87,10 @@ $footer: #9E4DC3;
         line-height: normal;
         cursor: pointer;
     }
+}
+
+.footer__img:hover {
+    transform: scale(1.3);
 }
 
 @media (min-width: 768px) {
