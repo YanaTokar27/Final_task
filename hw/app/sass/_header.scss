@@ -221,10 +221,11 @@ $switch: #B3B3BA;
 
             &.current {
                 color: $arrow-active;
-                border-bottom: 2px solid $arrow-active;
-                border-radius: 0;
-                padding-bottom: 3px;
             }
+        }
+
+        &.white {
+            color: $hover-header;
         }
     }
 
@@ -362,6 +363,10 @@ $switch: #B3B3BA;
         padding: 0 60px;
     }
 
+    main .container {
+        margin-top: 60px;
+    }
+
     .header {
         position: relative;
         grid-template-columns: 1fr;
@@ -485,6 +490,7 @@ $switch: #B3B3BA;
             padding: 0;
             background: transparent;
             position: static;
+            max-height: 0px;
         }
 
         .menu__list_item {
@@ -501,10 +507,6 @@ $switch: #B3B3BA;
                 border-radius: 0;
             }
 
-            &.current:hover {
-                border-bottom: 2px solid $arrow-active;
-            }
-
             &.white {
                 color: $white;
             }
@@ -512,7 +514,11 @@ $switch: #B3B3BA;
             &.white:hover {
                 border-bottom: 2px solid $white;
                 border-radius: 0;
+            }
 
+            &.current {
+                border-bottom: 2px solid $arrow-active;
+                border-radius: 0;
             }
         }
     }
