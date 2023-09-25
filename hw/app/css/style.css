@@ -417,9 +417,6 @@
   .container {
     padding: 0 60px;
   }
-  main .container {
-    margin-top: 60px;
-  }
   .header {
     position: relative;
     grid-template-columns: 1fr;
@@ -539,6 +536,7 @@
     background: transparent;
     position: static;
     max-height: 0;
+    padding-bottom: 60px;
   }
   .menu .menu__list_item {
     margin-bottom: 0;

@@ -363,10 +363,6 @@ $switch: #B3B3BA;
         padding: 0 60px;
     }
 
-    main .container {
-        margin-top: 60px;
-    }
-
     .header {
         position: relative;
         grid-template-columns: 1fr;
@@ -414,7 +410,7 @@ $switch: #B3B3BA;
     }
 
     .header__title h1 {
-        padding-top: 299px;
+        padding-top: 269px;
         padding-bottom: 417px;
     }
 
@@ -491,6 +487,7 @@ $switch: #B3B3BA;
             background: transparent;
             position: static;
             max-height: 0;
+            padding-bottom: 60px;
         }
 
         .menu__list_item {
