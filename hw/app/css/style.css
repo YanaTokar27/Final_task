@@ -538,7 +538,7 @@
     padding: 0;
     background: transparent;
     position: static;
-    max-height: 0px;
+    max-height: 0;
   }
   .menu .menu__list_item {
     margin-bottom: 0;
