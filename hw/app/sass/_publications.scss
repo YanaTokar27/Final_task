@@ -1,6 +1,7 @@
 $hover-header:#24A3FF;
 $link-active: #E6E6F0;
 $switch: #B3B3BA;
+$arrow-active: #F0145A;
 
 .publications {
     padding-top: 30px;
@@ -59,6 +60,11 @@ $switch: #B3B3BA;
         padding-bottom: 15px;
         text-decoration: none;
         align-self: start;
+    }
+
+    &__title:hover {
+        color: $arrow-active;
+        transition-duration: 700ms;
     }
 
     &__data {

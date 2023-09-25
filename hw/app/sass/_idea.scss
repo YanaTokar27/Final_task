@@ -42,8 +42,9 @@ $white: #fff;
     }
 
     &__title:hover {
-        color: $white;
+        color: #F0145A;
         transition-duration: 700ms;
+        transform: scale(1.1);
     }
 
     &__text {

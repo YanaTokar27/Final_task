@@ -1,6 +1,6 @@
 $hover-header: #24A3FF;
 $white: #fff;
-$switch: #B3B3BA;
+$arrow-active: #F0145A;
 
 .blue_arrow {
     display: flex;
@@ -15,6 +15,8 @@ $switch: #B3B3BA;
     text-transform: uppercase;
     text-decoration: none;
     padding-bottom: 5px;
+    transform: translateY(1px);
+    transition-duration: 300ms;
 
     &__right::after {
         content: '';
@@ -25,20 +27,20 @@ $switch: #B3B3BA;
 }
 
 .blue_arrow:hover a {
-    color: $white;
+    color: $arrow-active;
     transition-duration: 800ms;
     transform: scale(1.1);
 }
 
 .blue_arrow:hover path {
-    stroke: $white;
+    stroke: $arrow-active;
     transition-duration: 800ms;
 }
 
 .blue_arrow__dark:hover a {
-    color: $switch;
+    color: $arrow-active;
 }
 
 .blue_arrow__dark:hover path {
-    stroke: $switch;
+    stroke: $arrow-active;
 }

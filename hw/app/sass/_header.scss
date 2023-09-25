@@ -94,6 +94,8 @@ $switch: #B3B3BA;
         line-height: normal;
         text-decoration: none;
         display: contents;
+        transition-duration: 400ms;
+        transition-property: color;
 
         &.about {
             color: $switch;
@@ -102,10 +104,6 @@ $switch: #B3B3BA;
             line-height: normal;
             text-decoration: none;
         }
-    }
-
-    &__phone:hover {
-        color: $hover-header;
     }
 
     &__logo-box-page {
@@ -140,6 +138,8 @@ $switch: #B3B3BA;
         text-transform: uppercase;
         padding: 5px 7px;
         border-radius: 8px;
+        transition-duration: 300ms;
+        transition-property: background-color;
     }
 }
 
@@ -217,6 +217,7 @@ $switch: #B3B3BA;
             color: $hover-header;
             transition-duration: 1000ms;
             transition-property: color;
+            padding-bottom: 3px;
 
             &.current {
                 color: $arrow-active;
@@ -224,10 +225,6 @@ $switch: #B3B3BA;
                 border-radius: 0;
                 padding-bottom: 3px;
             }
-        }
-
-        &.link:active {
-            background: $link-active;
         }
     }
 
@@ -402,12 +399,13 @@ $switch: #B3B3BA;
     }
 
     .header__fb:hover {
+        color: $arrow-active;
         transition-duration: 1000ms;
         transform: scale(1.3);
     }
 
     .header__fb:hover path {
-        fill: $hover-header;
+        fill: $arrow-active;
     }
 
     .header__title h1 {
@@ -490,36 +488,30 @@ $switch: #B3B3BA;
         }
 
         .menu__list_item {
-            text-decoration: none;
             margin-bottom: 0;
-            line-height: normal;
             padding-top: 0;
             padding-bottom: 0;
-            display: flex;
-            justify-content: center;
             background: transparent;
             margin-right: 15px;
             margin-top: 30px;
             font-size: 16px;
 
             &.link:hover {
-                color: $switch;
+                border-bottom: 2px solid $hover-header;
+                border-radius: 0;
+            }
 
-                &.current {
-                    color: $arrow-active;
-                    border-bottom: 2px solid $arrow-active;
-                    border-radius: 0;
-                }
+            &.current:hover {
+                border-bottom: 2px solid $arrow-active;
             }
 
             &.white {
                 color: $white;
-                transition-duration: 1000ms;
-                transition-property: color;
             }
 
             &.white:hover {
-                color: $hover-header;
+                border-bottom: 2px solid $white;
+                border-radius: 0;
 
             }
         }

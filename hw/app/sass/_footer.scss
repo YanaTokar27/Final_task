@@ -1,6 +1,7 @@
 $hover-header:#24A3FF;
 $footer: #9E4DC3;
 $switch: #B3B3BA;
+$arrow-active: #F0145A;
 
 .foot {
     background-color: #F5F5FA;
@@ -35,10 +36,6 @@ $switch: #B3B3BA;
         text-decoration: none;
         margin-top: 10px;
         margin-bottom: 21px;
-
-        &:hover {
-            color: $footer;
-        }
     }
 
     &__data {
@@ -54,7 +51,8 @@ $switch: #B3B3BA;
     }
 
     &__img:hover path {
-        fill: $footer;
+        fill: $arrow-active;
+        transition-duration: 700ms;
     }
 
     &__tel {
@@ -64,10 +62,6 @@ $switch: #B3B3BA;
         text-decoration: none;
         margin-top: 10px;
         margin-bottom: 10px;
-
-        &:hover {
-            color: $footer;
-        }
     }
 
     &__mail {
@@ -78,7 +72,8 @@ $switch: #B3B3BA;
         margin-bottom: 30px;
 
         &:hover {
-            color: $footer;
+            color: $arrow-active;
+            transition-duration: 700ms;
         }
     }
 
@@ -93,6 +88,8 @@ $switch: #B3B3BA;
 }
 
 .footer__img:hover {
+    color: $arrow-active;
+    transition-duration: 700ms;
     transform: scale(1.3);
 }
 
